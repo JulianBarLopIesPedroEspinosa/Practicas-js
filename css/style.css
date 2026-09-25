@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+header
+{
+    width: 100%;
+    background-color: #ff0000;
+    height: 10%;
+}
+aside{
+    float: left;
+    background-color: #5eff00;
+    width: 30%;
+    height: 80%;
+}
+main{
+    float: right;
+    background-color: #eeff00;
+    width: 70%;
+    height: 80%;
+}
+footer{
+    clear: both;
+    background-color: aqua;
+    width: 100%;
+    height: 10%;
+}
+#itnNumItemCarrito{
+    text-align: center;
+}

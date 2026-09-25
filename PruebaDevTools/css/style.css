@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+#cuadrados{
+    display: flex;
+}
+#antes{
+    padding: 3%;
+    text-align: center;
+    background-color: aqua;
+    border: 2px, solid,black;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+#despues{
+    padding: 3%;
+    text-align: center;
+    background-color: aqua;
+    border: 2px, solid,black;
+    margin-top: 1%;
+}
