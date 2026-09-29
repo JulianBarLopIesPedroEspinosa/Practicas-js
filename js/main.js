@@ -1,13 +1,14 @@
-var numConsole = 50;
+const in1 = document.getElementById("in1");
+const in2 = document.getElementById("in2");
+const btnSumar = document.getElementById("btnSumar");
+const h11 = document.getElementById("h11");
 
-var alumno = ["Pepe", true, 5.67, null, {name:"Ana", curso:"2ºDAW"},[7,8.3,9.5]];
 
-console.log("Tamaño de a es: " + alumno.length);
-console.log(alumno[5]);
-console.log(typeof alumno);
 
 /****************  FUNCTIONS  **********************************************/
-document.getElementById("itnNumItemCarrito").addEventListener("blur",function(){
-    numConsole += parseInt(this.value);
-    console.log(numConsole);
+btnSumar.addEventListener("click",function(){ //Funcion que suma los valores que tengamso en los inputs
+        h11.innerHTML = "Resultado de la suma: "    
+    if(typeof parseInt(in1.value) == "number" && typeof parseInt(in2.value) == "number")
+    h11.innerHTML += parseInt(in1.value) + parseInt(in2.value);
+    console.log("Entre")
 });
