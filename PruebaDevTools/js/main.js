@@ -14,10 +14,10 @@ btn.addEventListener("click", suma);
 
 function suma() {
     numSquare.innerHTML = parseInt(numSquare.innerHTML)+1;  
-    if( parseInt(numSquare.innerHTML)%10==0)
-        decena(colorcito());
+    if( parseInt(numSquare.innerHTML)%2==0)
+        par(colorcito());
 };
-function decena(colorcito){
+function par(colorcito){
     globalThis.document.getElementById("html").style.backgroundColor = colorcito; 
 };  
 
