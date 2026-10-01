@@ -16,9 +16,11 @@ function suma() {
     numSquare.innerHTML = parseInt(numSquare.innerHTML)+1;  
     if( parseInt(numSquare.innerHTML)%2==0)
         par(colorcito());
+    else if(parseInt(numSquare.innerHTML)%3==0)
+        parr();
 };
 function par(colorcito){
-    globalThis.document.getElementById("html").style.backgroundColor = colorcito; 
+    numSquare.style.backgroundColor = colorcito; 
 };  
 
 function colorcito(){
