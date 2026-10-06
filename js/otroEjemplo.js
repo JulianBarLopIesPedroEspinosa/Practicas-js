@@ -1,4 +1,4 @@
-document.getElementById("btnSumar").addEventListener("click", function(){
+/*document.getElementById("btnSumar").addEventListener("click", function(){
     let in1 = parseInt(document.getElementById("in1").value);
     let in2 = parseInt(document.getElementById("in2").value);
 
@@ -11,11 +11,11 @@ document.getElementById("btnSumar").addEventListener("click", function(){
     }
 });
 
-/**
+**
  * COmprueba si el dato que se pasa es un numero positivo
  * @param data a filtrar filtrar
  * @return true si es un numero positivo
- */
+ *
 function errorFilter(data){
     if( (data<=0) )
         throw new Error("Los numeros no pueden ser menores ni iguales a 0");
@@ -23,4 +23,4 @@ function errorFilter(data){
         throw new Error("No has escrito un numero");
         
       
-}
+}*/

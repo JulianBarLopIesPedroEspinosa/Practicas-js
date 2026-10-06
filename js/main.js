@@ -1,4 +1,4 @@
-const in1 = document.getElementById("in1");
+/*const in1 = document.getElementById("in1");
 const in2 = document.getElementById("in2");
 const btnSumar = document.getElementById("btnSumar");
 const h11 = document.getElementById("h11");
@@ -8,7 +8,7 @@ btnSumar.onclick = doSuma;
 let result = doSuma(56.77, 11, 1, 2, 3, 4);
 console.log("Resultado de la suma: " + result);
 
-/****************  FUNCTIONS  ***********************************************/
+/****************  FUNCTIONS  ***********************************************
 
 function doSuma(a, b, ...restoOperadores){
     console.log(restoOperadores);
