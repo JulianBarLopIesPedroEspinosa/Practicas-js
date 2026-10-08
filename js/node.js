@@ -1,4 +1,4 @@
-const h12 = document.getElementById("h12");
+/*const h12 = document.getElementById("h12");
 let myAlumn = {
     name:"John",
     surname: "Power",
@@ -28,4 +28,10 @@ Object.defineProperties(myAlumn3,{
     surname:{configurable:true, enumerable:true, value:"Perezsito"},
     age:{configurable:true, enumerable:true, value:23}
 })
+*/
 
+for(let i=0;i<=1000;i++){
+    if((Math.floor(Math.random()*100)+1)==0){
+        console.log("Salio 100");
+    }
+};
