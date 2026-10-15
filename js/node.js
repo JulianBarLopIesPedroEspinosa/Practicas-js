@@ -30,8 +30,8 @@ Object.defineProperties(myAlumn3,{
 })
 */
 
-for(let i=0;i<=1000;i++){
-    if((Math.floor(Math.random()*100)+1)==0){
+for (let i = 0; i <= 1000; i++) {
+    if ((Math.floor(Math.random() * 100) + 1) == 0) {
         console.log("Salio 100");
     }
 };

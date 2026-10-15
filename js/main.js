@@ -54,6 +54,7 @@ btnSumar.addEventListener("click",function(){ //Funcion que suma los valores que
     console.log("Entre")
 });
 */
+/*
 const h11 = document.getElementById("h11");
 
 let myArray = new Array();
@@ -96,9 +97,76 @@ const calendario = document.getElementById("calendario");
 
 h4.innerHTML = "Peo"
 
-calendario.oninput = function (){
+calendario.oninput =  function (){
     h4.innerHTML = "Hola " + (new Date(this.value))
 }
 document.body.appendChild(h4);
+
+*/
+
+
+const h21 = document.getElementById("h21")
+
+let navigatorObject = new Object({
+    useragent: navigator.userAgent,
+    platform: navigator.platform,
+    lenguage: navigator.language,
+    conectado: navigator.onLine,
+    permitidoCookies: navigator.cookieEnabled,
+    cpus: navigator.hardwareConcurrency,
+    webdriver: navigator.webdriver
+})
+
+h21.innerHTML = navigatorObject.useragent + "<br>";
+h21.innerHTML += "Plataforma del sistema operativo" + navigatorObject.platform + "<br>";
+h21.innerHTML += "Idioma preferido del navegador" + navigatorObject.lenguage + "<br>";
+h21.innerHTML += "Devuelve true si el navegador está conectado a internet." + navigatorObject.conectado + "<br>";
+h21.innerHTML += "Devuelve true si las cookies están habilitadas" + navigatorObject.permitidoCookies + "<br>";
+h21.innerHTML += "Número de núcleos de CPU disponibles." + navigatorObject.cpus + "<br>";
+h21.innerHTML += "Devuelve true si el navegador está controlado por un software de automatización."
+    + navigatorObject.webdriver + "<br>";
+
+
+let screenObject = new Object({
+    availHeight: screen.availHeight,
+    availWidth: screen.availWidth,
+    colorDepth: screen.colorDepth,
+    height: screen.height,
+    width: screen.width,
+    pixelDepth: screen.pixelDepth,
+    orientationType: screen.orientation.type,
+    orientationAngle: screen.orientation.angle,
+    availLeft: screen.availLeft,
+    availTop: screen.availTop
+})
+
+h21.innerHTML = "Altura disponible de la pantalla para el uso de ventanas: " + screenObject.availHeight + "<br>";
+h21.innerHTML += "Anchura disponible de la pantalla para el uso de ventanas: " + screenObject.availWidth + "<br>";
+h21.innerHTML += "Número de colores (en bits) que puede representar la pantalla: " + screenObject.colorDepth + "<br>";
+h21.innerHTML += "Altura total de la pantalla: " + screenObject.height + "<br>";
+h21.innerHTML += "Anchura total de la pantalla: " + screenObject.width + "<br>";
+h21.innerHTML += "Resolución de la pantalla expresada en bits por píxel: " + screenObject.pixelDepth + "<br>";
+h21.innerHTML += "Tipo de orientación actual de la pantalla: " + screenObject.orientationType + "<br>";
+h21.innerHTML += "Ángulo de orientación actual de la pantalla: " + screenObject.orientationAngle + "<br>";
+h21.innerHTML += "Posición horizontal disponible desde el borde izquierdo (multimonitor): " + screenObject.availLeft + "<br>";
+h21.innerHTML += "Posición vertical disponible desde el borde superior (multimonitor): " + screenObject.availTop + "<br>";
+
+
+if(screen.height > screen.width){
+    h21.innerHTML = "portrait";
+}
+else{
+    h21.innerHTML = "landscape"
+}
+
+document.body.onresize = ()=>{   
+if(screen.height > screen.width){
+    h21.innerHTML = "portrait";
+    
+}
+else{
+    h21.innerHTML = "landscape"
+}
+}
 
 
