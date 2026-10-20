@@ -1,0 +1,97 @@
+/* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Fondo de la pantalla centrado */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0f172a; /* Azul oscuro profundo */
+            color: #f8fafc;
+        }
+
+        /* Contenedor del formulario */
+        form {
+            background: #1e293b; /* Gris azulado oscuro */
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.2);
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Título decorativo dentro del form */
+        form::before {
+            content: "Iniciar Sesión";
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-align: center;
+            color: #3b82f6; /* Azul brillante */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Estilo de las etiquetas (Labels) */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #94a3b8; /* Gris claro */
+            letter-spacing: 0.5px;
+        }
+
+        /* Estilo de los campos de texto (Inputs) */
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            background: #0f172a;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        /* Efecto al hacer clic o enfocar los inputs */
+        input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+            background: #1e293b;
+        }
+
+        /* Botón de enviar */
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Efectos del botón */
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
